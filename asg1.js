@@ -1,3 +1,9 @@
+window.alert(' tapping on any item will select it and display it in selected element box')
+window.alert(' each element has buttons ++ += -')
+window.alert('++ will add one element child in it')
+window.alert('+= will add selected element as child in it')
+window.alert('-  will remove it')
+
 let a = 1;
 
 $("body").on("click","#add", function() {
