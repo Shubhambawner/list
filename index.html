@@ -13,7 +13,11 @@
   crossorigin="anonymous"></script>
 
   <script >window.jQuery || document.write(`<script src= "node_modules/jquery/dist/jquery.min.js"> <\/script>`)</script>
-    <div id="instructions" >
+  
+  <div id="outer">
+
+  <div id="cover">
+  <div id="instructions" >
         1. tapping on any item will select it and display it in selected element box<br>
         2. each element has buttons ++ += -<br>
         3. ++ will add one element child in it<br>
@@ -21,13 +25,24 @@
         5. -  will remove it
     </div>
   Selected item:
-  <div id="selected"> </div>
+  <div id="selected"> 
 
+  </div>
+  </div>
+
+
+  <div id="cover">
   Item list: 
   <div id="dynamic">
       <button id="add">++</button>
       <button id='addSelected' >+=</button> 
   </div>
+
+</div>
+
+
+</div>
+
     <script src="asg1.js"></script>
 
     <style>
@@ -35,6 +50,21 @@
             border: 1px solid black;
             padding: 10px;
             margin: 10px;
+            background: #00000017;
+        }
+        div#cover{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            background: #00000000;
+        }
+        div#outer{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            background: #00000000;
+            display: flex;
+            width: 100vw;
         }
     </style>
 </body>
